@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/csssketch.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mediaqueriessketch.css">
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lousa Mágica</title>
+</head>
+
+<body>
+    <main id="sketch">
+        <div id="containerInput">
+            <label for="inputcolor">Cor da tinta:</label>
+            <input type="color" class="inputs" id="inputColor">
+            <button class="buttons" id="ink"> Tinta </button>
+            <button class="buttons" id="rubber"> Borracha</button>
+            <button id="apagar"> Apagar</button>
+            <input id="inputRange" value="16" max="64" min="1" type="range" class="inputs">
+            <label id='labelRange' for="inputRange"></label>
+        </div>
+        <div id="containerSketchTitle">
+            <h1 id="titulo">Lousa Mágica</h1>
+            <div id="containerGrid"></div>
+        </div>
+
+
+    </main>
+    <footer> <a href="https://github.com/Lokoio17" target="_blank" rel="noopener noreferrer">GITHUB</a>
+        <a href="https://github.com/Lokoio17" target="_blank" rel="noopener noreferrer"> <img id='gitHubLogo'
+                src="css/githublogo.jpg" alt="Logo do github"></a>
+    </footer>
+
+    <script src="jssketch.js"></script>
+</body>
+</html>
+

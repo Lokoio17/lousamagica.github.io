@@ -1,0 +1,258 @@
+/* seletores gerais*/
+:root {
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    text-align: center;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+#inputColor {
+    /* box-shadow: black 3px 3px 3px; */
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+}
+
+#containerSketchTitle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerGrid {
+    box-shadow: grey 0px 0px 7px 2px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+    width: 500px;
+    border: 1px solid darkgray;
+    display: grid;
+    height: 31.25em;
+}
+
+#titulo {
+    padding: 10% 0;
+    font-family: 'Rubik Iso', cursive;
+    color: rgb(223, 166, 61);
+    text-align: center;
+    font-size: 4em;
+}
+
+#sketch {
+    height: 100%;
+    padding: 0 5%;
+    display: flex;
+    gap: 7%;
+}
+
+#containerInput {
+    height: 500px;
+    margin-top: auto;
+    width: 23%;
+    padding-left: 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.buttons,
+#apagar {
+    margin: auto;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    width: 60%;
+    height: 2.8em;
+    background-color: #323133;
+    box-shadow: grey 0px 0px 2px 1px;
+}
+
+.buttons:hover,
+#apagar:hover {
+    opacity: 75%;
+
+
+}
+
+.buttons:focus {
+    background-color: rgb(25, 25, 155)
+}
+
+#inputRange {
+    width: 75%;
+    margin: auto;
+}
+
+.inputs,
+button {
+    cursor: pointer;
+    margin: 15px;
+}
+/* remover aparencias padroes dos inputs*/
+input[type="color"] {
+    appearance: none;
+    border: none;
+    
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    appearance: none;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 100%;
+    appearance: none;
+}
+
+footer {
+    padding: 2px 0;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    background-color: #1f2937;
+    width: 100%;
+}
+
+
+
+#gitHubLogo {
+    width: 30px;
+    border: solid 1px transparent;
+    border-radius: 15px;
+}
+
+
+/* animacao para o logo do github girar*/
+#gitHubLogo:hover {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #323133;
+    border-radius: 15px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #000000;
+    height: 22px;
+    width: 22px;
+    border-radius: 23px;
+    background: #f5f4f4;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4.5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #323133;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #323133;
+    border-radius: 15px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #000000;
+    height: 22px;
+    width: 22px;
+    border-radius: 23px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #323133;
+    border: 0px solid #000000;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #323133;
+    border: 0px solid #000000;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #000000;
+    height: 22px;
+    width: 22px;
+    border-radius: 23px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #323133;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #323133;
+  }
+  

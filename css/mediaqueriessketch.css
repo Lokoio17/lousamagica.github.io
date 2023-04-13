@@ -1,0 +1,77 @@
+
+@media screen and (max-width: 800px){
+    #containerInput{
+        padding-left: 0%;
+    }
+    .buttons,#apagar{
+        width: 100%;
+    }
+    #titulo{
+        padding: 5% 0;
+    }
+    
+
+}
+@media screen and (max-width: 740px){
+    #sketch{
+        padding: 0;
+        gap:3%;
+    }
+}
+@media screen and (max-width: 680px){
+    #sketch{
+        gap: 20px;
+        flex-direction: column-reverse;
+        
+    }
+    #containerInput{
+        width: 100%;
+    }
+    .buttons,#apagar{
+        width: 50%;
+    }
+    #titulo{
+        padding:2% 0;
+    }
+    footer{
+        margin: 0.93em 0;
+        position: relative;
+    }
+
+
+}
+@media screen and (max-width:500px)
+
+{
+
+    #containerGrid{
+        width: 100%;
+    }
+    #inputColor{
+        width: 80px;
+        height: 80px;
+    }
+    
+}
+@media screen and (max-width:450px){
+    #containerGrid{
+        height:400px;
+    }
+    
+}
+@media screen and (max-width:350px){
+    
+    #containerGrid{
+        height:18.75em ;
+    }
+    #titulo{
+        font-size: 100%;
+    }
+    
+}
+    
+@media screen and (max-width:120px){
+    .buttons,#apagar{
+        width: 100%;
+    }
+}
