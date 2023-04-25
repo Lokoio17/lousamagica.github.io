@@ -1,4 +1,6 @@
 # Lousa-magica
+Unfortunately, I lost the original repository with all the commit history.
+
 Etch-a-Sketch Project with HTML, CSS, JavaScript
 
 This project is a virtual Etch-a-Sketch created using HTML, CSS, JavaScript, and Grid. The virtual Etch-a-Sketch provides a grid-based painting experience that allows users to create unique and fun designs.
