@@ -98,6 +98,7 @@ function changeSize() {
   containerGrid.innerHTML = "";
   createGrid();
   ink.classList.add('active')
+  rubber.classList.remove("active")
   whichButton()
 }
 

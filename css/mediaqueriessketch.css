@@ -60,7 +60,9 @@
     
 }
 @media screen and (max-width:350px){
-    
+    #sketch{
+        align-items: unset;
+    }
     #containerGrid{
         height:18.75em ;
     }
