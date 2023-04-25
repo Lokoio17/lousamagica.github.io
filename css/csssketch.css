@@ -1,27 +1,32 @@
 /* seletores gerais*/
-:root {
+*{
+    padding:0;
+    margin: 0; 
+}
+html, body {
+    margin: 0;
     height: 100%;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer";
+    grid-template-rows: 1fr 80px;
     background-color: rgb(236, 236, 236);
 }
-
-* {
-    margin: 0;
-    padding: 0;
+main {
+    grid-area: main;
 }
-
-label {
-    text-align: center;
-    font-family: 'Rubik 80s Fade', cursive;
-    font-weight: 500;
-}
-
 a {
     text-decoration: underline;
     color: white;
 }
-
-#inputColor {
-    /* box-shadow: black 3px 3px 3px; */
+label {
+    text-align: center;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-weight: 500; 
+}
+#inputColor { 
     width: 120px;
     height: 120px;
     background-color: transparent;
@@ -54,7 +59,7 @@ a {
 }
 
 #sketch {
-    height: 100%;
+    align-items: center;
     padding: 0 5%;
     display: flex;
     gap: 7%;
@@ -62,7 +67,6 @@ a {
 
 #containerInput {
     height: 500px;
-    margin-top: auto;
     width: 23%;
     padding-left: 5%;
     flex-direction: column;
@@ -122,15 +126,16 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 footer {
+    height: 100%;
     padding: 2px 0;
+    margin-top: 15px;
     gap: 1%;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
-    position: absolute;
     color: white;
-    bottom: 0;
+    grid-area: footer;
     background-color: #1f2937;
     width: 100%;
 }
@@ -168,9 +173,10 @@ footer {
         transform: rotate(360deg);
     }
 }
+/* estilizacao do input range*/
 
 input[type=range] {
-    -webkit-appearance: none;
+    appearance: none;
   }
   input[type=range]:focus {
     outline: none;
