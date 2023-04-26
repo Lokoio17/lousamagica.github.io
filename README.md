@@ -1,5 +1,5 @@
 # Lousa-magica
-Unfortunately, I lost the original repository with all the commit history.
+Unfortunately, I lost the original repository with all previous commit history.
 
 Etch-a-Sketch Project with HTML, CSS, JavaScript
 
