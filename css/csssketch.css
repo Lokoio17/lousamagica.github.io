@@ -127,7 +127,6 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 footer {
-    height: 100%;
     margin-top: 10px;
     gap: 1%;
     justify-content: center;
